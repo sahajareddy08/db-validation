@@ -1,0 +1,126 @@
+DataComPy Comparison
+--------------------
+
+DataFrame Summary
+-----------------
+
+   DataFrame  Columns    Rows
+0  Source DB        7   13284
+1  Target DB        8  269547
+
+Column Summary
+--------------
+
+Number of columns in common: 7
+Number of columns in Source DB but not in Target DB: 0
+Number of columns in Target DB but not in Source DB: 1
+
+Row Summary
+-----------
+
+Matched on: fgsku
+Any duplicates on match values: No
+Absolute Tolerance: 0
+Relative Tolerance: 0
+Number of rows in common: 13,284
+Number of rows in Source DB but not in Target DB: 0
+Number of rows in Target DB but not in Source DB: 256,263
+
+Number of rows with some compared columns unequal: 13,284
+Number of rows with all compared columns equal: 0
+
+Column Comparison
+-----------------
+
+Number of columns compared with some values unequal: 5
+Number of columns compared with all values equal: 2
+Total number of values which compare unequal: 28,526
+
+Columns with Unequal Values or Types
+------------------------------------
+
+                Column Source DB dtype Target DB dtype  # Unequal  Max Diff  # Null Diff
+3      createddatetime  datetime64[ns]  datetime64[ns]      13284       0.0            0
+0              fglabel          object          object       1135       0.0            0
+4     modifieddatetime  datetime64[ns]  datetime64[ns]      13284       0.0            0
+1     netweightpercase         float64         float64        721      25.5            0
+2  netweightpercaseuom          object          object        102       0.0           77
+
+Sample Rows with Unequal Values
+-------------------------------
+
+            fgsku                          fglabel (Source DB)                          fglabel (Target DB)
+353    1000000730  "SKIN ON STRAIGHT 5/16"" GRADE A NORTHWEST"  "D_SKIN ON STRAIGHT 5/16"" GRADE A NORTHWE"
+10960        6024                  BM WEDGES SANS PEAU 5X2500G               DD_BM WEDGES SANS PEAU 5X2500G
+5053   1000007706              MCCAIN CRISPERS KOSHER 4X2,5 KG           DD_MCCAIN CRISPERS KOSHER 4X2,5 KG
+5403   1000008167     CV DOBBEL FRIETKRUIDEN 800G 16/CBL17 NEW      DD_CV DOBBEL FRIETKRUIDEN 800G 16/CBL17
+1248   1000002097                    RT WIN OBRIEN HB 12X28 OZ                 DD_RT WIN OBRIEN HB 12X28 OZ
+12348    CKP04988               FS CRABFRIES CC FF POTS 6X5 LB            DD_FS CRABFRIES CC FF POTS 6X5 LB
+6186   1000009246               GMB1 SIG BRNE SO PX 3/8SC6X5LB              DD_RT APT POT SKIN 18X8.5OZ_WIP
+10162       44784                MCCAIN ROASTS 12X1KG +50% NBF             DD_MCCAIN ROASTS 12X1KG +50% NBF
+10752        5415                 CUBES 13X13X13 IN OCT 550 KG              DD_CUBES 13X13X13 IN OCT 550 KG
+235    1000000566              D_RT FLI SEAS SC FRIES 12X28 OZ             DD_RT FLI SEAS SC FRIES 12X28 OZ
+
+            fgsku  netweightpercase (Source DB)  netweightpercase (Target DB)
+5562   1000008448                         0.000                          1.00
+12552    KRO03379                        16.875                         16.88
+9284       400701                        19.841                         19.84
+11786         902                        13.725                         13.73
+6376   1001001077                         0.425                          0.43
+8433       301014                        24.021                         24.02
+951    1000001650                         0.425                          0.43
+9226      3SNO257                        21.094                         21.09
+5509   1000008369                         8.625                          8.63
+9241    40010025B                         0.907                          0.91
+
+           fgsku netweightpercaseuom (Source DB) netweightpercaseuom (Target DB)
+5639  1000008547                            None                      KG        
+6057  1000009046                            None                      KG        
+6184  1000009236                      KG                              LB        
+6212  1000009280                      KG                              LB        
+6172  1000009182                            None                      KG        
+5562  1000008448                            None                      KG        
+6164  1000009174                            None                      KG        
+5712  1000008626                            None                      KG        
+6149  1000009151                            None                      KG        
+6173  1000009183                            None                      KG        
+
+            fgsku createddatetime (Source DB) createddatetime (Target DB)
+7412        14822     2020-08-06 23:42:34.700     2021-01-21 04:21:33.073
+9137         3869     2020-08-06 23:42:34.700     2021-01-21 04:21:33.073
+10332       47654     2020-08-06 23:42:34.700     2021-01-21 04:21:33.073
+6695         1016     2020-08-06 23:42:34.700     2021-01-21 04:21:33.073
+10025      431300     2020-08-06 23:42:34.700     2021-01-21 04:21:33.073
+6204   1000009271     2020-12-18 17:19:28.740     2021-01-21 04:21:33.073
+6364   1001001031     2020-08-06 23:42:34.700     2021-01-21 04:21:33.073
+11688         847     2020-08-06 23:42:34.700     2021-01-21 04:21:33.073
+11456    73610142     2020-08-06 23:42:34.700     2021-01-21 04:21:33.073
+8107       209090     2020-08-06 23:42:34.700     2021-01-21 04:21:33.073
+
+            fgsku modifieddatetime (Source DB) modifieddatetime (Target DB)
+3399   1000005708      2021-05-18 04:12:58.677      2022-01-11 22:26:08.467
+7479       153803      2021-05-18 04:12:58.677      2022-01-11 22:26:08.467
+3887   1000006316      2021-05-18 04:12:58.677      2022-01-11 22:26:08.467
+7945       202248      2021-05-18 04:12:58.677      2022-01-11 22:26:08.467
+10729       52290      2021-05-18 04:12:58.677      2022-01-11 22:26:08.467
+12876    OIR05320      2021-05-18 04:12:58.677      2022-01-11 22:26:08.467
+2870   1000005114      2021-05-18 04:12:58.677      2022-01-11 22:26:08.467
+7265    12UV19152      2021-05-18 04:12:58.677      2022-01-11 22:26:08.467
+4881   1000007478      2021-05-18 04:12:58.677      2022-01-11 22:26:08.467
+1725   1000002754      2021-05-18 04:12:58.677      2022-01-11 22:26:08.467
+
+Sample Rows Only in Target DB (First 10 Columns)
+------------------------------------------------
+
+             fgsku                                     fglabel fgproductfamiliy  netweightpercase         createddatetime        modifieddatetime netweightpercaseuom  specialtytypeid
+159960  4000126583                              SWTCH SFTY 20A             ZSPR              0.00 2021-01-23 14:07:32.667 2021-01-23 14:07:32.667                None                0
+200578  4000170767                    LOCK SFTY SS TRNSTN SHRT             ZSPR              0.00 2021-01-23 14:07:32.667 2021-01-23 14:07:32.667                None                0
+181854  4000151544          SEAL OIL 17 MM ID 35 MM OD 7 MM WD             ZSPR              0.00 2021-01-23 14:07:32.667 2021-01-23 14:07:32.667                None                0
+171010  4000137700                      PLUG ELCTRCL 3P CB FML             ZSPR              0.00 2021-01-23 14:07:32.667 2021-01-23 14:07:32.667                None                0
+185018  4000154708                                  RLLR CNVYR             ZSPR              0.00 2021-01-23 14:07:32.667 2021-01-23 14:07:32.667                None                0
+111568  4000077911   "BELT CNVYR 35.625"" LG X 0.080"" THK SS"             ZSPR              0.00 2021-01-23 14:07:32.667 2021-01-23 14:07:32.667                None                0
+92230   4000058296                     GRMTR RT 6.8:1 1-1/2 HP             ZSPR              0.00 2021-01-23 14:07:32.667 2021-01-23 14:07:32.667                None                0
+21812   2000009037    DD_DENNY'S DOUBLE CHOC PANCAKE BATTER MI             ZWIP              2.21 2021-01-23 14:07:32.667 2022-01-11 22:26:08.467          LB                        0
+111397  4000077727  "BRG FLNG BLOK 1-1/2"" BORE 4 BOLT MNT CI"             ZSPR              0.00 2021-01-23 14:07:32.667 2021-01-23 14:07:32.667                None                0
+16727   2000002957                           VANILLA  ICING_PH             ZWIP              2.21 2021-01-23 14:07:32.667 2022-01-11 22:26:08.467          LB                        0
+

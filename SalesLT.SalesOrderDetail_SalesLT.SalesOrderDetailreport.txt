@@ -1,0 +1,59 @@
+DataComPy Comparison
+--------------------
+
+DataFrame Summary
+-----------------
+
+   DataFrame  Columns  Rows
+0  Source DB        5   542
+1  Target DB        5   542
+
+Column Summary
+--------------
+
+Number of columns in common: 5
+Number of columns in Source DB but not in Target DB: 0
+Number of columns in Target DB but not in Source DB: 0
+
+Row Summary
+-----------
+
+Matched on: salesorderdetailid, salesorderid
+Any duplicates on match values: No
+Absolute Tolerance: 0
+Relative Tolerance: 0
+Number of rows in common: 542
+Number of rows in Source DB but not in Target DB: 0
+Number of rows in Target DB but not in Source DB: 0
+
+Number of rows with some compared columns unequal: 12
+Number of rows with all compared columns equal: 530
+
+Column Comparison
+-----------------
+
+Number of columns compared with some values unequal: 1
+Number of columns compared with all values equal: 4
+Total number of values which compare unequal: 12
+
+Columns with Unequal Values or Types
+------------------------------------
+
+  Column Source DB dtype Target DB dtype  # Unequal  Max Diff  # Null Diff
+0      0           int64           int64         12       7.0            0
+
+Sample Rows with Unequal Values
+-------------------------------
+
+     salesorderdetailid  salesorderid  0 (Source DB)  0 (Target DB)
+145              110780         71784             10              3
+126              110761         71784             10              3
+116              110751         71783             10              3
+87               110722         71783             10              3
+197              111054         71797             10              3
+35               110670         71782             10              3
+159              110794         71784             10              3
+112              110747         71783             10              3
+199              111056         71797             10              3
+210              111067         71797             10              3
+

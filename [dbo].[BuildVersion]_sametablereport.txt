@@ -1,0 +1,38 @@
+DataComPy Comparison
+--------------------
+
+DataFrame Summary
+-----------------
+
+   DataFrame  Columns  Rows
+0  Source DB        4     1
+1  Target DB        4     1
+
+Column Summary
+--------------
+
+Number of columns in common: 4
+Number of columns in Source DB but not in Target DB: 0
+Number of columns in Target DB but not in Source DB: 0
+
+Row Summary
+-----------
+
+Matched on: systeminformationid
+Any duplicates on match values: No
+Absolute Tolerance: 0
+Relative Tolerance: 0
+Number of rows in common: 1
+Number of rows in Source DB but not in Target DB: 0
+Number of rows in Target DB but not in Source DB: 0
+
+Number of rows with some compared columns unequal: 0
+Number of rows with all compared columns equal: 1
+
+Column Comparison
+-----------------
+
+Number of columns compared with some values unequal: 0
+Number of columns compared with all values equal: 4
+Total number of values which compare unequal: 0
+

@@ -1,0 +1,100 @@
+DataComPy Comparison
+--------------------
+
+DataFrame Summary
+-----------------
+
+   DataFrame  Columns    Rows
+0  Source DB       14    2711
+1  Target DB       14  545695
+
+Column Summary
+--------------
+
+Number of columns in common: 14
+Number of columns in Source DB but not in Target DB: 0
+Number of columns in Target DB but not in Source DB: 0
+
+Row Summary
+-----------
+
+Matched on: sampleguid
+Any duplicates on match values: No
+Absolute Tolerance: 0
+Relative Tolerance: 0
+Number of rows in common: 1
+Number of rows in Source DB but not in Target DB: 2,710
+Number of rows in Target DB but not in Source DB: 545,694
+
+Number of rows with some compared columns unequal: 1
+Number of rows with all compared columns equal: 0
+
+Column Comparison
+-----------------
+
+Number of columns compared with some values unequal: 6
+Number of columns compared with all values equal: 8
+Total number of values which compare unequal: 6
+
+Columns with Unequal Values or Types
+------------------------------------
+
+  Column Source DB dtype Target DB dtype  # Unequal  Max Diff  # Null Diff
+4     10  datetime64[ns]  datetime64[ns]          1         0            0
+5     11  datetime64[ns]  datetime64[ns]          1         0            0
+0      4          object          object          1         0            0
+1      5          object          object          1         0            0
+2      7          object          object          1         0            0
+3      8          object          object          1         0            1
+
+Sample Rows with Unequal Values
+-------------------------------
+
+                               sampleguid 4 (Source DB) 4 (Target DB)
+832  B6310F67-2F08-49BE-8BC4-08D8751941D1    2020-10-21    2021-06-01
+
+                               sampleguid                         5 (Source DB)                         5 (Target DB)
+832  B6310F67-2F08-49BE-8BC4-08D8751941D1  8A85F605-0404-4AF9-90EC-EA5D4D66106C  3E84607E-F031-5495-9106-7AF3D918F0C0
+
+                               sampleguid                         7 (Source DB)                         7 (Target DB)
+832  B6310F67-2F08-49BE-8BC4-08D8751941D1  A9EFB449-DECD-4F5B-8993-2D54381EC668  08E99093-FBEF-DC68-12FC-823D34245347
+
+                               sampleguid                         8 (Source DB) 8 (Target DB)
+832  B6310F67-2F08-49BE-8BC4-08D8751941D1  52A30B9C-5DBA-46B6-8BBF-E37A33F172AB          None
+
+                               sampleguid          10 (Source DB)          10 (Target DB)
+832  B6310F67-2F08-49BE-8BC4-08D8751941D1 2020-10-21 01:31:29.280 2021-10-15 10:17:19.130
+
+                               sampleguid          11 (Source DB)          11 (Target DB)
+832  B6310F67-2F08-49BE-8BC4-08D8751941D1 2020-10-21 01:31:30.323 2021-10-15 10:17:19.130
+
+Sample Rows Only in Source DB (First 10 Columns)
+------------------------------------------------
+
+       0     1    2                                                   3           4                                     5  6                                     7                                     8                                     9
+1421  PL  CY19  2.0     PL_BinInseasonSampleData- Row Range(157 to 160)  2020-11-28                                  None  1  A6A0ED0C-C94F-423E-8288-E186CD84F1CC  654CBCA4-5ACC-4F5B-84A9-B5487A262B75  9CC7986D-F25E-427A-9506-94A8FFBB7C4C
+1267  PL  CY19  4.0       PCR_Pi_QualityData_Stg2021-01-21 19:10:11.937  2019-11-22                                  None  2  449D49B1-0AEA-4F6F-AF4C-DFE724F66FF0  449D49B1-0AEA-4F6F-AF4C-DFE724F66FF0  449D49B1-0AEA-4F6F-AF4C-DFE724F66FF0
+1902  PL  CY19  4.0       PCR_Pi_QualityData_Stg2021-01-21 19:10:11.937  2019-10-20                                  None  2  03F07665-15AE-449A-8D0B-D9C5A00E545D  03F07665-15AE-449A-8D0B-D9C5A00E545D  03F07665-15AE-449A-8D0B-D9C5A00E545D
+1821  PL  CY19  4.0       PCR_Pi_QualityData_Stg2021-01-22 01:45:10.475  2020-11-13                                  None  1  A6A0ED0C-C94F-423E-8288-E186CD84F1CC  654CBCA4-5ACC-4F5B-84A9-B5487A262B75  4AD4C1EC-49F0-40A6-A970-9F301D2DED41
+418   PL  CY19  2.0                                                None  2020-10-11  9BFD4531-898D-40AE-9136-CCBF0BBDB10A  1  FED88941-4531-11D7-A388-020000236150  6E267296-BB58-4304-A487-5E55F7A4CA1B                                  None
+1327  PL  CY19  4.0       PCR_Pi_QualityData_Stg2021-01-21 19:10:11.937  2020-01-30                                  None  1  81B730D0-EFE3-467F-A500-80065F1308D2  7904B92B-FE08-444F-ACC4-8812F34C892C  47D38A61-76F7-4CEE-830F-1031DDDB6504
+2088  PL  CY19  4.0       PCR_Pi_QualityData_Stg2021-01-21 19:10:11.937  2019-10-24                                  None  2  639AF5D6-19F1-41CE-9CB7-0C7398FBAE68  639AF5D6-19F1-41CE-9CB7-0C7398FBAE68  639AF5D6-19F1-41CE-9CB7-0C7398FBAE68
+1993  PL  CY19  2.0  PL_CY19_BinInseasonSampleData- Row Range(1 to 113)  2020-12-22                                  None  1  2D0C421A-113B-4DB0-B08A-64FA6F5E18B1  FA723C23-DAA9-436B-8FE6-3D9D8BF60D62  4237154E-6880-4E1E-B3BA-5B53BAD02902
+927   PL  CY19  4.0       PCR_Pi_QualityData_Stg2021-01-21 19:10:11.937  2019-10-29                                  None  1  00000000-0000-0000-0001-CEE92C3C5CFF  00000000-0000-0000-0002-CEE92C3C5CFF  00000000-0000-0000-0003-35E335BD1E33
+949   PL  CY19  4.0       PCR_Pi_QualityData_Stg2021-01-21 19:10:11.937  2020-01-22                                  None  1  00000000-0000-0000-0001-605AEBAA2958  00000000-0000-0000-0002-605AEBAA2958  00000000-0000-0000-0003-86B0AEBFCC9D
+
+Sample Rows Only in Target DB (First 10 Columns)
+------------------------------------------------
+
+         0     1    2                                                   3           4     5  6     7     8     9
+250182  UK  CY17  4.0           SamplingHistoricalDataUK-13164-2017-12-12  2017-12-12  None  2  None  None  None
+396652  CE  CY18  5.0  StoreLoading , SampleDate: 20181031 , RowNo: 23085  2018-10-31  None  1  None  None  None
+436514  UK  CY13  4.0           SamplingHistoricalDataUK-31180-2014-05-17  2014-05-17  None  2  None  None  None
+200297  CE  None  6.0                                                None        None  None  2  None  None  None
+477335  UK  CY11  4.0           SamplingHistoricalDataUK-18539-2012-02-01  2012-02-01  None  2  None  None  None
+449503  UK  CY12  1.0             SamplingHistoricalDataUK-778-2012-09-06  2012-09-06  None  2  None  None  None
+125449  UK  CY11  4.0           SamplingHistoricalDataUK-30004-2012-06-14  2012-06-14  None  2  None  None  None
+409008  UK  CY12  4.0           SamplingHistoricalDataUK-10109-2012-10-29  2012-10-29  None  2  None  None  None
+105689  UK  CY19  4.0           SamplingHistoricalDataUK-30531-2020-06-15  2020-06-15  None  2  None  None  None
+327232  UK  CY16  4.0           SamplingHistoricalDataUK-67372-2016-10-27  2016-10-27  None  2  None  None  None
+

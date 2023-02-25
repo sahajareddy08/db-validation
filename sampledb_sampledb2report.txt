@@ -1,0 +1,53 @@
+DataComPy Comparison
+--------------------
+
+DataFrame Summary
+-----------------
+
+   DataFrame  Columns  Rows
+0  Source DB        4   145
+1  Target DB        4   214
+
+Column Summary
+--------------
+
+Number of columns in common: 4
+Number of columns in Source DB but not in Target DB: 0
+Number of columns in Target DB but not in Source DB: 0
+
+Row Summary
+-----------
+
+Matched on: table_name
+Any duplicates on match values: Yes
+Absolute Tolerance: 0
+Relative Tolerance: 0
+Number of rows in common: 145
+Number of rows in Source DB but not in Target DB: 0
+Number of rows in Target DB but not in Source DB: 69
+
+Number of rows with some compared columns unequal: 0
+Number of rows with all compared columns equal: 145
+
+Column Comparison
+-----------------
+
+Number of columns compared with some values unequal: 0
+Number of columns compared with all values equal: 4
+Total number of values which compare unequal: 0
+
+Sample Rows Only in Target DB (First 10 Columns)
+------------------------------------------------
+
+    table_schema   table_name column_name data_type
+181          dbo    demo_view   Attribute  nvarchar
+196      SalesLT  SampleDataa        Year  smallint
+158          dbo     testview       Value     float
+164      SalesLT   SampleData   MonthName  nvarchar
+210          dbo     ErrorLog  ErrorState       int
+176          dbo    demo_view   CO2_Level       int
+186      SalesLT  SampleDataa     Quarter   tinyint
+203          dbo     demoview   Attribute  nvarchar
+206          dbo     ErrorLog   ErrorTime  datetime
+157      SalesLT         data       Value     float
+

@@ -1,0 +1,51 @@
+DataComPy Comparison
+--------------------
+
+DataFrame Summary
+-----------------
+
+   DataFrame  Columns  Rows
+0  Source DB       15   847
+1  Target DB       15   847
+
+Column Summary
+--------------
+
+Number of columns in common: 15
+Number of columns in Source DB but not in Target DB: 0
+Number of columns in Target DB but not in Source DB: 0
+
+Row Summary
+-----------
+
+Matched on: customerid
+Any duplicates on match values: No
+Absolute Tolerance: 0
+Relative Tolerance: 0
+Number of rows in common: 847
+Number of rows in Source DB but not in Target DB: 0
+Number of rows in Target DB but not in Source DB: 0
+
+Number of rows with some compared columns unequal: 2
+Number of rows with all compared columns equal: 845
+
+Column Comparison
+-----------------
+
+Number of columns compared with some values unequal: 1
+Number of columns compared with all values equal: 14
+Total number of values which compare unequal: 2
+
+Columns with Unequal Values or Types
+------------------------------------
+
+     Column Source DB dtype Target DB dtype  # Unequal  Max Diff  # Null Diff
+0  lastname          object          object          2         0            0
+
+Sample Rows with Unequal Values
+-------------------------------
+
+     customerid lastname (Source DB) lastname (Target DB)
+0             1                  Gee              Changed
+616       29773                  Gee              Changed
+

@@ -1,0 +1,51 @@
+DataComPy Comparison
+--------------------
+
+DataFrame Summary
+-----------------
+
+   DataFrame  Columns  Rows
+0  Source DB        5   417
+1  Target DB        5   417
+
+Column Summary
+--------------
+
+Number of columns in common: 5
+Number of columns in Source DB but not in Target DB: 0
+Number of columns in Target DB but not in Source DB: 0
+
+Row Summary
+-----------
+
+Matched on: addressid, customerid
+Any duplicates on match values: No
+Absolute Tolerance: 0
+Relative Tolerance: 0
+Number of rows in common: 417
+Number of rows in Source DB but not in Target DB: 0
+Number of rows in Target DB but not in Source DB: 0
+
+Number of rows with some compared columns unequal: 2
+Number of rows with all compared columns equal: 415
+
+Column Comparison
+-----------------
+
+Number of columns compared with some values unequal: 1
+Number of columns compared with all values equal: 4
+Total number of values which compare unequal: 2
+
+Columns with Unequal Values or Types
+------------------------------------
+
+  Column Source DB dtype Target DB dtype  # Unequal  Max Diff  # Null Diff
+0      0          object          object          2         0            0
+
+Sample Rows with Unequal Values
+-------------------------------
+
+   addressid  customerid 0 (Source DB) 0 (Target DB)
+7        889       29497      Shipping   Main Office
+5        537       29494      Shipping   Main Office
+

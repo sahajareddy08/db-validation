@@ -1,0 +1,55 @@
+DataComPy Comparison
+--------------------
+
+DataFrame Summary
+-----------------
+
+   DataFrame  Columns  Rows
+0  Source DB        4   450
+1  Target DB        4   450
+
+Column Summary
+--------------
+
+Number of columns in common: 4
+Number of columns in Source DB but not in Target DB: 0
+Number of columns in Target DB but not in Source DB: 0
+
+Row Summary
+-----------
+
+Matched on: addressid
+Any duplicates on match values: No
+Absolute Tolerance: 0
+Relative Tolerance: 0
+Number of rows in common: 450
+Number of rows in Source DB but not in Target DB: 0
+Number of rows in Target DB but not in Source DB: 0
+
+Number of rows with some compared columns unequal: 6
+Number of rows with all compared columns equal: 444
+
+Column Comparison
+-----------------
+
+Number of columns compared with some values unequal: 1
+Number of columns compared with all values equal: 3
+Total number of values which compare unequal: 6
+
+Columns with Unequal Values or Types
+------------------------------------
+
+  Column Source DB dtype Target DB dtype  # Unequal  Max Diff  # Null Diff
+0      2          object          object          6         0            0
+
+Sample Rows with Unequal Values
+-------------------------------
+
+     addressid 2 (Source DB) 2 (Target DB)
+308        588        Dallas   Dallaspuram
+29         577        Dallas   Dallaspuram
+403        574        Dallas   Dallaspuram
+263         25        Dallas   Dallaspuram
+402        581        Dallas   Dallaspuram
+394        572        Dallas   Dallaspuram
+
